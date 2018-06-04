@@ -1,0 +1,162 @@
+.show-box-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 9;
+    overflow: hidden;
+}
+.content {
+    width: 25.38rem;
+    height: 22.615rem;
+    -webkit-border-radius: 0.384rem;
+    -moz-border-radius: 0.384rem;
+    border-radius: 0.384rem;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin-left: -12.69rem;
+    margin-top: -11.3rem;
+}
+.draw-close-btn {
+    width: 3.846rem;
+    height: 3rem;
+    float: right;
+    background-image: url(../images/close_wht_icon.png);
+    -webkit-background-size: 2.3rem 2.3rem;
+    background-size: 2.3rem 2.3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+.open-content.over {
+    background-color: #fff;
+    line-height: 2.15rem;
+    font-size: 1.358rem;
+    color: #fa614c;
+    text-align: center;
+}
+.open-content {
+    width: 18.61rem;
+    height: 19.61rem;
+    margin: 3rem auto 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.open-content.over .over-text {
+    margin-top: 6.153rem;
+}
+.open-content.over text {
+    display: block;
+}
+.open-content.over {
+    background-color: #fff;
+    line-height: 2.15rem;
+    font-size: 1.358rem;
+    color: #fa614c;
+    text-align: center;
+}
+.open-content.over text {
+    display: block;
+}
+.open-content.over {
+    background-color: #fff;
+    line-height: 2.15rem;
+    font-size: 1.358rem;
+    color: #fa614c;
+    text-align: center;
+}
+.open-content.active {
+    background-image: url(../images/col_draw_bg.png);
+    -webkit-background-size: 18.61rem 19.61rem;
+    background-size: 18.61rem 19.61rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.open-content {
+    width: 18.61rem;
+    height: 19.61rem;
+    margin: 3rem auto 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.open-tips {
+    line-height: 4.38rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.18rem;
+}
+.contu-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4.3rem;
+    line-height: 4.3rem;
+    color: #fff;
+    background-color: #fff;
+}
+.sh-enable-btn.sh-contu-btn {
+    background-color: #fa614c;
+}
+.sh-contu-btn {
+    width: 14.846rem;
+    height: 2.538rem;
+    line-height: 2.538rem;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 1.18rem;
+    margin: 0.846rem auto;
+    -webkit-border-radius: 2.538rem;
+    -moz-border-radius: 2.538rem;
+    border-radius: 2.538rem;
+    cursor: pointer;
+}
+
+
+
+
+@keyframes aniopen{
+    from{
+        color: #fff;
+        text-shadow:0 0 0 #fff,
+        0 0 10px #fff,
+        0 0 30px #fff,
+        0 0 40px #ffff00,
+        0 0 70px #ffff00,
+        0 0 80px #ffff00,
+        0 0 100px #ffff00,
+        0 0 150px #ffff00;
+        transform: rotate3d(0,1,1,-360deg) scale(1.5,1.5);
+        opacity: 0;
+    }
+    to{
+        color: #fa614c;
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #ffff00,
+        0 0 35px #ffff00,
+        0 0 40px #ffff00,
+        0 0 50px #ffff00,
+        0 0 75px #ffff00;
+        transform:rotate3d(0,1,1,0deg) scale(1,1);
+        opacity: 1;
+    }
+}
+.open-detail{
+    width: 5.92rem;
+    height: 6.38rem;
+    line-height: 6.38rem;
+    -webkit-border-radius: 0.384rem;
+    -moz-border-radius: 0.384rem;
+    border-radius: 0.384rem;
+    margin: 4.23rem auto 0 auto;
+    background-color: #fff;
+    color: #fa614c;
+    font-size: 2.97rem;
+    text-align: center;
+    animation: aniopen 2.5s ease 1;
+}
